@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back001"
+    tools:context="com.example.kasunchinthaka.alwaysyummy.Main6Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:background="#000000"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SEARCH"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="map"
+            android:text="MAP"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="restaurant"
+            android:text="ALL"/>
+
+    </LinearLayout>
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvIsConnected"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="#FF0000"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:layout_below="@+id/linear1"-->
+        <!--android:textSize="18dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:text="is connected? " />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear11"
+                android:layout_weight="1"
+                android:layout_below="@+id/linear1"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/edit1"
+                    android:layout_below="@+id/linear1"
+                    android:hint="Food Name"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/edit1"
+                    android:id="@+id/edit2"
+                    android:hint="City Name"/>
+
+                <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="search"-->
+                <!--android:id="@+id/but1"-->
+                <!--android:layout_below="@+id/edit2"-->
+                <!--android:onClick="Search_By_Foodwise"/>-->
+
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:onClick="Search_By_Foodwise"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edit11"
+                    android:layout_weight="1"
+                    android:hint="Favourite Restaurant"/>
+
+
+
+
+
+
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/but33"
+                android:onClick="restau"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear33"
+        android:weightSum="2"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit111"
+            android:layout_weight="1"
+            android:hint="Location"/>
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Search By Location"
+            android:layout_weight="1"
+            android:id="@+id/but333"
+            android:onClick="location"/>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/list">
+
+    </ListView>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kasunchinthaka.alwaysyummy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.example.kasunchinthaka.alwaysyummy.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.kasunchinthaka.alwaysyummy.permission.MAPS_RECEIVE" />
+
+
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+
+
+    <!-- &lt;!&ndash; To auto-complete the email text field in the login form with the user's emails &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PROFILE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+
+
+    <!-- &lt;!&ndash; To determine user’s location using GPS. It will give us precise location. &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+
+
+    <!-- &lt;!&ndash; To check network state i.e if we are connected to any network or not. &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+
+
+    <!-- &lt;!&ndash; If we are connected to Internet or not. &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> -->
+    <!-- &lt;!&ndash; -->
+    <!-- The ACCESS_COARSE/FINE_LOCATION permissions are not required to use -->
+    <!-- Google Maps Android API v2, but you must specify either coarse or fine -->
+    <!-- location permissions for the 'MyLocation' functionality. -->
+    <!-- &ndash;&gt; -->
+    <!-- &lt;!&ndash; To determine user’s location using WiFi and mobile. It will gove us approximate location. &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAPT905ULXZnx0kfMpm-dyrL94LD5kMCn0" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="yummy"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="stateHidden"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".SecondActivity" />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".TabBarActivity" />
+        <activity android:name=".ThirdActivity" />
+        <!--  -->
+        <!--  -->
+        <!-- The API key for Google Maps-based APIs is defined as a string resource. -->
+        <!-- (See the file "res/values/google_maps_api.xml"). -->
+        <!-- Note that the API key is linked to the encryption key used to sign the APK. -->
+        <!-- You need a different API key for each encryption key, including the release key that is used to -->
+        <!-- sign the APK for publishing. -->
+        <!-- You can define the keys for the debug and release targets in src/debug/ and src/release/. -->
+        <!-- &ndash;&gt; -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAq6yTclmnU92s11lEjn1E_1YEeGF28iN0" />
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Main8Activity"/>
+        <activity android:name=".SendMailActivity"/>
+        <activity android:name=".Main9Activity"/>
+        <activity android:name=".SearchItems"></activity>
+    </application>
+
+</manifest>

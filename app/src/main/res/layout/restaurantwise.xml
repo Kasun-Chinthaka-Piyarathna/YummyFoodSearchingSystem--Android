@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+            android:background="#0C090A"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/webView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView3"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape8"
+            android:ems="10"
+            android:gravity="center"
+            android:textColorHint="@color/cast_expanded_controller_background_color"
+            android:layout_marginTop="50dp"
+            android:hint="Find your your restaurant">
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIND NOW"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape9"
+            android:textColor="#ffffff"
+            android:onClick="restau"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/list">
+
+        </ListView>
+
+    </LinearLayout>
+
+</ScrollView>

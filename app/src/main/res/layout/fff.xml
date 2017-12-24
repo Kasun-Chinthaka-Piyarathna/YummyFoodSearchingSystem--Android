@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context="com.example.kasunchinthaka.alwaysyummy.SecondActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ViewFlipper
+                android:id="@+id/bckgrndViewFlipper1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <ImageView
+                    android:id="@+id/bckgrndImageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide1" />
+                <ImageView
+                    android:id="@+id/bckgrndImageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide2" />
+                <ImageView
+                    android:id="@+id/bckgrndImageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide3" />
+                <ImageView
+                    android:id="@+id/bckgrndImageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide4" />
+                <ImageView
+                    android:id="@+id/bckgrndImageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide5" />
+                <ImageView
+                    android:id="@+id/bckgrndImageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide6" />
+                <ImageView
+                    android:id="@+id/bckgrndImageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide7" />
+
+            </ViewFlipper>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="FIND ON YOUR OWN DESIRE"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FOOD WISE"
+            android:background="@drawable/buttonshape7"
+            android:layout_marginTop="50dp"
+            android:textStyle="italic"
+            android:onClick="foodwise"
+            android:textAlignment="center"
+            android:textColor="#ffffff"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESTAURANT WISE"
+            android:textStyle="italic"
+            android:background="@drawable/buttonshape7"
+            android:onClick="restaurantwise"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOCATION WISE"
+            android:textStyle="italic"
+            android:background="@drawable/buttonshape7"
+            android:onClick="locationwise"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
